@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <h3>Fill This Form</h3>
+
+  <form action="#">
+
+    <div>
+      <label> Full Name</label> <br>
+      <input class="inputstyle" type="text" name="full_name" placeholder="John">
+    </div>
+
+    <div>
+      <label>Second Name</label> <br>
+      <input class="inputstyle" type="text" name="second_name" placeholder="Doe">
+    </div>
+
+    <div>
+      <label>Email Address</label> <br>
+      <input class="inputstyle" type="email" name="email" placeholder="johndoe@example.com">
+    </div>
+
+    <div>
+      <label>Phone Number</label> <br>
+      <input class="inputstyle" type="tel" name="phone_number" placeholder="254 712 345">
+    </div>
+
+    <div>
+      <label>GitHub Link</label> <br>
+      <input class="inputstyle" type="url" name="github_link" placeholder="github.com/username">
+    </div>
+
+    <div>
+      <label>Date of Birth</label> <br>
+      <input class="inputstyle" type="date" name="dob">
+    </div>
+
+    <div>
+      <label>Location</label> <br>
+      <select class="inputstyle" name="Location">
+        <option value="nairobi">Nairobi</option>
+        <option value="nakuru">Nakuru</option>
+        <option value="kisumu">Kisumu</option>
+        <option value="mombasa">Mombasa</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Gender</label> <br>
+      <input type="radio" name="gender" value="female">
+      <label>Female</label>
+      <input type="radio" name="gender" value="male">
+      <label>Male</label>
+    </div>
+
+    <div>
+      <label>Stack</label> <br>
+      <input type="checkbox" name="stack" value="frontend">
+      <label>Frontend</label>
+      <input type="checkbox" name="stack" value="backend">
+      <label>Backend</label>
+      <input type="checkbox" name="stack" value="fullstack">
+      <label>Fullstack</label>
+    </div>
+
+    <div>
+      <label>Upload Documents</label> <br>
+      <input type="file" name="docs">
+    </div>
+
+    <div>
+      <label>Any Other Info</label> <br>
+      <textarea name="aoi" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+      <input id="thebutton" type="submit" value="submit">
+    </div>
+
+  </form>
+</body>
+
+</html>
