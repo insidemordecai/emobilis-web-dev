@@ -62,8 +62,8 @@
 
   <section id="team">
     <h1 class="center">Our Team</h1>
-
     <div class="flex-contain">
+
       <div class="center">
         <img src="images/avatar.png" alt="Loading" width="200" height="200">
         <h2>David Croft</h2>
@@ -87,6 +87,57 @@
         <h2>Martin Brundle</h2>
         <p>Advisor</p>
       </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h1 class="center">Get In Touch</h1>
+    <div class="container">
+      <form action="#">
+
+        <div class="row">
+          <div class="col-20">
+            <label for="visitorFName">First Name</label>
+          </div>
+          <div class="col-80">
+            <input type="text" name="visitorFName" id="visitorFName" placeholder="John">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-20">
+            <label for="visitorLName">Last Name</label>
+          </div>
+          <div class="col-80">
+            <input type="text" name="visitorLName" id="visitorLName" placeholder="Doe">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-20">
+            <label for="visitorEmail">Email Address</label>
+          </div>
+          <div class="col-80">
+            <input type="email" name="visitorEmail" id="visitorEmail" placeholder="johndoe@example.com">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-20">
+            <label for="formSubject">Subject</label>
+          </div>
+          <div class="col-80">
+            <textarea name="formSubject" id="formSubject" style="height: 150px;"
+              placeholder="Write Something Here..."></textarea>
+          </div>
+        </div>
+
+        <div>
+          <button class="btn" type="submit">Submit</button>
+        </div>
+
+      </form>
     </div>
   </section>
 </body>
