@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+}
+
+.emphasis {
+  color: #009bad;
+}
+
+/* nav bar section */
+nav {
+  background-color: #009bad;
+  padding: 0 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.nav-right {
+  float: right;
+}
+
+.nav-left {
+  float: left;
+}
+
+nav div a {
+  text-decoration: none;
+  color: white;
+  display: inherit;
+  padding: 14px 16px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#company-logo {
+  padding: 5px 16px;
+}
+
+/* hero section */
+#hero {
+  background-image: url(../assets/images/hero.jpg);
+  height: 700px;
+}
+
+.hero-container {
+  transform: translate(40%, 45%);
+  position: absolute;
+}
+
+.hero-title {
+  font-size: 30px;
+}
+
+.hero-text {
+  font-size: 18px;
+}
+
+.cta-button {
+  padding: 14px 7px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 25px;
+  background-color: #009bad;
+  color: white;
+  width: 30%;
+  font-size: 15px;
+}
+
+.cta-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* blog section */
+#blog {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#blog h1 {
+  text-align: center;
+}
+
+.featuredBlog {
+  padding: 0 3px;
+}
+
+.featuredBlog h3 {
+  color: #009bad;
+}
+
+div a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-excerpt {
+  text-align: justify;
+  padding: 0 5% 0 0;
+  color: #222222;
+}
+
+.read-more {
+  font-weight: bold;
+  color: #009bad;
+  font-size: 17px;
+}
+
+.read-more a:hover {
+  color: black;
+}
+
