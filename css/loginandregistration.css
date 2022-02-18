@@ -1,0 +1,18 @@
+
+.grey{
+  color: grey;
+}
+
+.margin-TB{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.bottom-info{
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.required{
+  color: red;
+}
