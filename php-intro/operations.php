@@ -45,37 +45,37 @@ echo "<h4>Comparison Operators</h4>";
 
 $age = 13;
 
-if($age > 18){
+if ($age > 18) {
   echo "You are an adult <br>";
 } else {
   echo "You are a minor <br>";
 }
 
-if($a == $num1){
-  print ("It's true, a is equal to num1 <br>");
+if ($a == $num1) {
+  print("It's true, a is equal to num1 <br>");
 } else {
-  print ("False, a is not equal to num1 <br>");
+  print("False, a is not equal to num1 <br>");
 }
 
 $x = 16;
 $y = 16;
 
-if($x === $y){
-  print ("It's true, they are equal <br>");
-  print ("False,they are not equal <br>");
+if ($x === $y) {
+  print("It's true, they are equal <br>");
+  print("False,they are not equal <br>");
 }
 
-if($a != $num1){
-  print ("It's true, they are not equal <br>");
+if ($a != $num1) {
+  print("It's true, they are not equal <br>");
 } else {
-  print ("False, they are not equal <br>");
+  print("False, they are not equal <br>");
 }
 
-if ($age >= 20 and $age < 100){
+if ($age >= 20 and $age < 100) {
   echo "You are an adult <br>";
-} elseif ($age >= 12 and $age <20){
+} elseif ($age >= 12 and $age < 20) {
   echo "You are a teenager <br>";
-} elseif ($age > 0 and $age < 12){
+} elseif ($age > 0 and $age < 12) {
   echo "You are a child <br>";
 } else {
   echo "No such age <br>";
@@ -90,18 +90,18 @@ Marks between 0 - 100
 
 $grade = 80;
 
-if($grade >= 80 and $grade <= 100){
+if ($grade >= 80 and $grade <= 100) {
   echo "You have an A <br>";
-} elseif ($grade >= 70 and $grade < 80){
+} elseif ($grade >= 70 and $grade < 80) {
   echo "You have a B <br>";
-} elseif ($grade >= 60 and $grade < 70){
+} elseif ($grade >= 60 and $grade < 70) {
   echo "You have a C <br>";
-} elseif ($grade >= 50 and $grade < 60){
+} elseif ($grade >= 50 and $grade < 60) {
   echo "You have a D <br>";
-} elseif ($grade >= 0 and $grade < 50){
+} elseif ($grade >= 0 and $grade < 50) {
   echo "Sorry, you have an F! <br>";
 } else {
-  echo "Invalid Grade!"; 
+  echo "Invalid Grade!";
 }
 
 /* Code to calculate gross salary
@@ -115,15 +115,15 @@ BS > 40k, 40%, 70%, 12%
 
 $salary = 50000;
 
-if($salary <= 10000 and $salary >= 0){
+if ($salary <= 10000 and $salary >= 0) {
   $med = 0.2 * $salary;
   $house = 0.5 * $salary;
   $tax = 0.1 * $salary;
-  
+
   $gross = $salary + $med + $house - $tax;
 
   echo "Gross salary is $gross";
-} elseif ($salary <= 20000 and $salary > 10000){
+} elseif ($salary <= 20000 and $salary > 10000) {
   $med = 0.25 * $salary;
   $house = 0.6 * $salary;
   $tax = 0.1 * $salary;
@@ -131,15 +131,15 @@ if($salary <= 10000 and $salary >= 0){
   $gross = $salary + $med + $house - $tax;
 
   echo "Gross salary is $gross";
-} elseif ($salary <= 30000 and $salary > 20000){
+} elseif ($salary <= 30000 and $salary > 20000) {
   $med = 0.3 * $salary;
   $house = 0.65 * $salary;
   $tax = 0.12 * $salary;
 
   $gross = $salary + $med + $house - $tax;
-  
+
   echo "Gross salary is $gross";
-} elseif ($salary <= 40000 and $salary > 30000){
+} elseif ($salary <= 40000 and $salary > 30000) {
   $med = 0.35 * $salary;
   $house = 0.68 * $salary;
   $tax = 0.12 * $salary;
@@ -147,14 +147,14 @@ if($salary <= 10000 and $salary >= 0){
   $gross = $salary + $med + $house - $tax;
 
   echo "Gross salary is $gross";
-} elseif ($salary >= 40000){
+} elseif ($salary >= 40000) {
   $med = 0.4 * $salary;
   $house = 0.7 * $salary;
   $tax = 0.12 * $salary;
-  
+
   $gross = $salary + $med + $house - $tax;
 
   echo "Gross salary is $gross";
-} else{
+} else {
   echo "Invalid Salary!";
 }
