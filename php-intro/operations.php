@@ -158,3 +158,96 @@ if ($salary <= 10000 and $salary >= 0) {
 } else {
   echo "Invalid Salary!";
 }
+
+echo "<hr>";
+echo "<h4>The Swith Statement</h4>";
+
+$day = "Fri";
+
+switch ($day) {
+  case "Mon":
+    echo "Today is Monday, I declare it Tuesday. Happy Tuesday everybody - Garfield";
+    break;
+  case "Tue":
+    echo "Today is Tuesday,read a book";
+    break;
+  case "Wed":
+    echo "Today is Wednesday, do some coding";
+    break;
+  case "Thur":
+    echo "Today is Thursday, go for that singing practice";
+    break;
+  default:
+    echo "Paaartaaay, it's the weekend";
+    break;
+}
+
+echo "<hr>";
+echo "<h4>Loops</h4>";
+
+echo "<h4>While Loop </h4>";
+
+$a = 1;
+
+while ($a < 10) {
+  echo "The value of a is $a <br>";
+  $a++;
+}
+
+echo "<br>";
+echo "<h4>Do While Loop</h4>";
+
+$b = 1;
+
+do {
+  echo "The value of b is $b <br>";
+  $b++;
+} while ($b <= 5);
+
+echo "<br>";
+echo "<h4>For Loop</h4>";
+
+for ($i = 10; $i > 1; $i--) {
+  echo "The value of i is $i <br>";
+}
+
+echo "<br>";
+echo "<h4>Odd and Even Numbers</h4>";
+
+/*
+print even numbers between 0 - 50
+print odd numbers between 0-50
+ */
+
+$oddCounter = 1;
+
+echo "These are the odd numbers: ";
+for ($oddCounter; $oddCounter <= 50; $oddCounter++) {
+  if ($oddCounter % 2 == 1) {
+    echo "$oddCounter ";
+  }
+}
+
+$evenCounter = 1;
+
+echo "<br>";
+echo "These are the even numbers: ";
+for ($evenCounter; $evenCounter <= 50; $evenCounter++) {
+  if ($evenCounter % 2 == 0) {
+    echo "$evenCounter ";
+  }
+}
+
+echo "<br>";
+echo "<h4>Right Angled Triangle</h4>";
+/*
+print this pattern using a loop
+
+*
+**
+***
+****
+*****
+******
+
+*/
