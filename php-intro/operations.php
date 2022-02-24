@@ -260,3 +260,99 @@ for ($i = 1; $i <= $rows; $i++) {
   }
   echo "<br>";
 }
+
+echo "<hr>";
+
+/*
+declare an array
+sorting arrays
+*/ 
+
+echo "<h4>Arrays and Sorting Them</h4>";
+
+$f1Teams = array("Mercedes", "RedBull", "Ferrari", "McLaren");
+echo "The 2021 champions were $f1Teams[0] <br>";
+echo "The top teams were: ";
+echo count($f1Teams);
+
+// manually indexing arrays
+$f1CarBrands[0] = "Mercedes";
+$f1CarBrands[1] = "Ferrari";
+$f1CarBrands[2] = "McLaren";
+$f1CarBrands[3] = "Alpine";
+$f1CarBrands[4] = "Aston Martin";
+
+$arrlength = count($f1CarBrands);
+
+echo "<br>";
+echo "The car brands in F1 are: ";
+for($x = 0; $x < $arrlength; $x++) {
+  echo $f1CarBrands[$x];
+  echo " ";
+}
+echo "<br>";
+
+// associative array - using named keys (like dictionary in Python)
+$driverAge = array("HAM" => "37", "NOR" => "22");
+$driverAge['VER'] = "24";
+$driverAge['VET'] = "35";
+
+echo "<br>";
+echo "Hamilton is " . $driverAge['HAM'] . " yrs old. <br>";
+echo "Verstappen is " . $driverAge['VER'] . " yrs old. <br>";
+
+echo "<br>";
+foreach($driverAge as $x => $x_value) {
+  echo "Key=" . $x . ", Value=" . $x_value;
+  echo "<br>";
+}
+
+// multidimensional arrays
+$driverStandings = array(
+  array('VER', 'Netherlands', 395.5),
+  array('HAM', 'Great Britain', 387.5),
+  array('BOT', 'Finland', 226),
+  array('PER', 'Mexico', 190),
+);
+
+echo "<br>";
+echo $driverStandings[0][0]." from ".$driverStandings[0][1]." got ".$driverStandings[0][2]."points.<br>";
+echo $driverStandings[1][0]." from ".$driverStandings[1][1]." got ".$driverStandings[1][2]."points.<br>";
+echo $driverStandings[2][0]." from ".$driverStandings[2][1]." got ".$driverStandings[2][2]."points.<br>";
+echo $driverStandings[3][0]." from ".$driverStandings[3][1]." got ".$driverStandings[3][2]."points.<br>";
+
+$standingsRows = 4;
+$standingsCols = 3;
+
+echo "<br>";
+echo "<b>Driver Standings - Driver Nationality Points</b> <br>";
+
+for($i = 0; $i < $standingsRows; $i++){
+  for($j = 0; $j < $standingsCols; $j++){
+    // print($driverStandings[$i][$j]);
+    echo $driverStandings[$i][$j] . " ";
+  }
+  echo "<br>";
+}
+
+// sorting arrays - either numberically or alphabetically
+echo "<br>";
+sort($f1CarBrands); // ascending order
+echo $f1CarBrands[0]."<br>";
+
+rsort($f1CarBrands); // descending order
+echo $f1CarBrands[0]."<br>";
+
+asort($driverAge); // associative array in ascending order of value (arsort - for descending)
+echo "<br>";
+foreach($driverAge as $x => $x_value) {
+  echo "Key=" . $x . ", Value=" . $x_value;
+  echo "<br>";
+}
+
+ksort($driverAge); // associative array in ascending order of key (krsort - for descending)
+echo "<br>";
+foreach($driverAge as $x => $x_value) {
+  echo "Key=" . $x . ", Value=" . $x_value;
+  echo "<br>";
+}
