@@ -1,12 +1,26 @@
 <?php
 
+$link = mysqli_connect("localhost", "root", "", "vivaldi");
+
+if ($link == true) {
+  echo "Connection was successful <br>";
+} else {
+  echo "Error connecting " . mysqli_connect_error($link) . "<br>";
+}
+
 if (isset($_POST["submit"])) {
-  
+
   $fullname = $_POST["fullname"];
   $email = $_POST["email"];
   $phonenumber = $_POST["phonenumber"];
   $gender = $_POST["gender"];
 
-  echo "Full name is $fullname and gender is $gender <br>";
-  echo "Email address is $email and phone number is $phonenumber <br>";
+  $sql = "INSERT INTO `detail`(`fullname`, `email`, `phonenumber`, `gender`) VALUES ('$fullname','$email','$phonenumber','$gender')";
+  $result = mysqli_query($link, $sql);
+
+  if ($result) {
+    echo "Data has been added successfully <br>";
+  } else {
+    echo "Error adding this record $sql " . mysqli_error($link) . "<br>";
+  }
 }
