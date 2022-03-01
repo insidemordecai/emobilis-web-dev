@@ -14,6 +14,7 @@ if (isset($_POST["submit"])) {
 
   if ($result) {
     echo "Data has been added successfully <br>";
+    header("location: select.php");
   } else {
     echo "Error adding this record $sql " . mysqli_error($link) . "<br>";
   }
