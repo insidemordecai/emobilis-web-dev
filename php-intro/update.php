@@ -3,6 +3,7 @@
 include "connect.php";
 
 if (isset($_POST["submit"])) {
+  // update
   $id = $_POST["id"];
 
   $up_fullname = $_POST["fullname"];
@@ -14,14 +15,14 @@ if (isset($_POST["submit"])) {
 
   $up_result = mysqli_query($link, $up_sql);
 
-  if ($up_result){
+  if ($up_result) {
     echo "Record has been updated";
     header("location: select.php");
   } else {
-    echo "Error executing query $up_sql ". mysqli_error($link);
+    echo "Error executing query $up_sql " . mysqli_error($link);
   }
 } else {
-
+  // fetch data and autofill prior to updating
   if (isset($_GET["id"]) and !empty($_GET["id"])) {
     $id = $_GET["id"];
     $sql = "SELECT * FROM `detail` WHERE id =$id";
@@ -77,10 +78,10 @@ if (isset($_POST["submit"])) {
     </div>
     <div>
       <label>Gender</label>
-        <select name="gender">
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-        </select>
+      <select name="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
     </div>
 
     <div>
