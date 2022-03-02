@@ -18,6 +18,8 @@ if ($result) {
       echo " " . $email = $row['email'];
       echo " " . $phonenumber = $row['phonenumber'];
       echo " " . $gender = $row['gender'];
+      echo "<a href='delete.php?id=" . $row['id'] . "'><button>Delete</button></a>";
+      echo "<a href='update.php?id=" . $row['id'] . "'><button>Update</button></a>";
 
       echo "<hr>";
     }
